@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>THAI ORIGINAL SOUNDTRACK</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">-OST-</a>
+			</div>
+			<ul>
+				<li class="selected">
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">song lists</a>
+				</li>
+				<li>
+					<a href="hairstyle.html">albums</a>
+				</li>
+				<li>
+					<a href="news.html">artist</a>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+			</ul>
+		</div>
+		<div class="article">
+			<img src="images\Original Soundtrack.png" alt="">
+		</div>
+	</div>
+	<div id="body">
+		<ul>
+			<li>
+				<a href="about.html"><img src="images\closer.png" alt=""></a>
+				<b>Recommend Song Lists</b>
+				<p>
+					A "song list" is a curated collection of songs grouped by genre, mood, or theme, designed to fit a specific listening experience or occasion
+				</p>
+			</li>
+			<li>
+				<a href="about.html"><img src="images\lasttwl.png" alt=""></a>
+				<b>Popular Songs</b>
+				<p>
+					"Popular songs" are widely recognized and frequently played tracks that have gained significant attention and commercial success, often topping music charts and appealing to a broad audience.
+				</p>
+			</li>
+			<li>
+				<a href="about.html"><img src="images\mw.png" alt=""></a>
+				<b>Recommend By Author</b>
+				<p>
+					"Recommended by author" refers to a list or suggestion of songs, creator based on their preferences or expertise
+				</p>
+			</li>
+			<li>
+				<a href="about.html"><img src="images\forever.png" alt=""></a>
+				<b>New Release</b>
+				<p>
+					A song new release refers to a recently launched track that is made available to the public for the first time, typically by an artist or band.
+				</p>
+			</li>
+		</ul>
+		<div>
+			<div class="featured">
+				<h2>TOPIC</h2>
+				<img src="images\IMG_1600.PNG" alt="">
+				<h3>What is OST?</h3>
+				<p>
+					The term original soundtrack (OST), often used for titles of albums of soundtrack music, is sometimes also used to differentiate the original music heard and recorded versus a rerecording or cover version.
+				</p>
+				<p>
+					A soundtrack is a recorded audio signal accompanying and synchronized to the images of a book, drama, motion picture, radio program, television program, or video game; colloquially, a commercially released soundtrack album of music as featured in the soundtrack of a film, video, or television presentation; or the physical area of a film that contains the synchronized recorded sound.
+				</p>
+				<p>
+					In movie industry terminology usage, a sound track is an audio recording created or used in film production or post-production. Initially, the dialogue, sound effects, and music in a film each has its own separate track, and these are mixed together to make what is called the composite track, which is heard in the film.
+				</p>
+			</div>
+			<div class="section">
+				<div class="article">
+				
+					<div id="greetingContainer" style="text-align: center; margin-top: 30px;"></div>
+					<h2 style="font-size: 32px; color: #fdfdfe; font-weight: bold; font-family: 'Times New Roman', Times, serif;"> Welcome to OST</h2>
+					<p style="font-size: 24px; color: #fdfdfe; font-family: 'Times New Roman', Times, serif;">What's your name?</p> 
+					<input type="text" id="nameInput" placeholder="Enter your name" style="padding: 10px; font-size: 18px; margin-top: 10px;">
+					<button id="greetButton" onclick="greetUser()" style="padding: 10px 20px; font-size: 18px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Greet Me!</button>
+					<p id="greetingMessage" style="font-size: 24px; color: rgb(230, 236, 230); font-weight: bold; margin-top: 20px;"></p> 
+				</div>
+				<div class="newsletter">
+					<p>
+						This website include features like Welcoming message, CSS styles, Images and Link to OST playlists.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+			</div>
+			<p>
+				&copy; By 23224009 | Chatpaiboon Natthachol
+			</p>
+		</div>
+	</div>
+	<script>
+		function greetUser() {
+			// Get the value entered by the user
+			const name = document.getElementById('nameInput').value;
+			
+			// Check if the name is empty
+			if (name.trim() === "") { 
+				document.getElementById('greetingMessage').textContent = "Please enter your name!"; 
+				document.getElementById('greetingMessage').style.color = "red"; 
+			} else { 
+				// Display the personalized greeting message 
+				document.getElementById('greetingMessage').textContent = "Hello, " + name + " Welcome to OST";
+				document.getElementById('greetingMessage').style.color = "white";
+				} 
+			} 
+		</script>
+</body>
+</html>
